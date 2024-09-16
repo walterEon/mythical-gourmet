@@ -15,7 +15,7 @@ function Navbar() {
 
       {/* Barra de búsqueda */}
       <div className="navbar-search">
-        <input type="text" placeholder="Search gourmet treats..." />
+        <input type="text" placeholder="Buscar alimentos gourmet..." />
         <button type="submit">
           <FaSearch />
         </button>
@@ -33,11 +33,11 @@ function Navbar() {
         </Link> */}
         <Link to="/profile" className="navbar-icon">
           <FaUser />
-          <span>Profile</span>
+          <span>Perfil</span>
         </Link>
         <Link to="/cart" className="navbar-icon">
           <FaShoppingCart />
-          <span>Cart</span>
+          <span>Carrito</span>
         </Link>
         
       </div>

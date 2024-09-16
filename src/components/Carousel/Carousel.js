@@ -1,6 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import './Carousel.css';
-import imagen from './zoe.jpg';
+import imagen from './mito.jpg';
 // import ExampleCarouselImage from 'components/ExampleCarouselImage';
 
 function UncontrolledExample() {
