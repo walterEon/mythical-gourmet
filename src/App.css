@@ -1,0 +1,11 @@
+/* Fondo de las páginas */
+body {
+  background-color: #fafafa; /* Puedes cambiarlo por alguno de los otros códigos sugeridos */
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Asegúrate de que el contenido no se vea pegado al borde */
+.page-content {
+  
+}
