@@ -1,0 +1,41 @@
+.categories-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    overflow-x: hidden;
+    
+}
+
+.categoria{
+    margin: 4px;
+    padding: 20px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.categoria label{
+    font-weight: bold;
+    text-align: center;
+}
+
+.imagen-container:hover img{
+    background-color: brown;
+    transition: background-color 0.3s ease;
+}
+
+.imagen-container img{
+    border: 2px solid black;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #f5f5c0;
+    max-width: 100px;
+    height: 90px;
+    width: 90px;
+    max-width: 100px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+
+

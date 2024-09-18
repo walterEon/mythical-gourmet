@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f5f5dc; /* Beige claro */
+    background-color: #f5f5c0; /* Beige claro */
     padding: 0px 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
@@ -58,6 +58,10 @@
     margin-left: 20px;
     color: #333;
     text-decoration: none;
+    
+    position: relative; /* Agregar para que el popup se posicione relativo a este elemento */
+    cursor: pointer;
+    
   }
   
   .navbar-icon svg {
@@ -73,6 +77,111 @@
   .navbar-icon:hover {
     color: #b5936d; /* Color crema más oscuro al pasar el mouse */
   }
+
+ /* Contenedor del popup (nube) */
+.popup {
+  position: absolute; /* Cambio a absolute para que se posicione relativo al icono */
+  top: 60px; /* Espacio desde el icono */
+  right: 15px; /* Ajusta para que se alinee con el borde derecho del icono */
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para darle efecto de nube */
+  width: 300px;
+  z-index: 100; /* Aseguramos que esté sobre otros elementos */
+}
+
+.popup::before {
+  content: '';
+  position: absolute;
+  top: -10px; /* Posiciona la punta de la nube */
+  right: 20px; /* Ajusta la posición para que la punta esté alineada con el icono */
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent white transparent; /* Punta de la nube en blanco */
+}
+
+.popup-content {
+  text-align: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.popup-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-content h5{
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.popup-content p{
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.popup-content form input {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 12px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 10px;
+  border: 2px solid gray;
+}
+
+.terminos {
+  display: flex;
+  align-items: center; /* Alinea el texto y el checkbox en la misma línea */
+  font-size: 11px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 10px 0;
+}
+
+.terminos a {
+  color: #f44336; /* Cambia el color del enlace */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  margin-left: 5px; /* Espacio entre el texto y el enlace */
+}
+
+.terminos a:hover {
+  text-decoration: underline; /* Añade subrayado al pasar el mouse por encima */
+}
+
+.terminos input {
+  margin-right: 10px; /* Añade espacio entre el checkbox y el texto */
+}
+
+
+.popup-content button {
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: auto;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+
+.popup-content button:hover {
+  background-color: #d32f2f;
+}
+
+
   
   /* Estilos responsivos para pantallas más pequeñas */
   @media (max-width: 768px) {

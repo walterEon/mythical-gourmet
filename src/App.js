@@ -1,6 +1,7 @@
 import { Routes, Route} from 'react-router-dom';
 import Home from './pages/Home/Home.js';
 import Navbar from './components/Navbar/Navbar.js';
+import Categoria from './pages/Categoria/Categoria.js';
 import AccessibilityButton from './components/AccessibilityButton/AccessibilityButton.js';
 import './App.css';
 
@@ -11,6 +12,7 @@ function App() {
       <div className="page-content">
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/categoria/:id' element={<Categoria />} />
         </Routes>
       </div>
 
