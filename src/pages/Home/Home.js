@@ -8,6 +8,7 @@ function Home() {
             {/* <h1>Home</h1>
             <p>¡Esta será la página del E-commerce de alimentos gourmet para animales mitológicos!</p> */}
             <UncontrolledExample />
+            <h2>Categorías</h2>
         </div>
     )
 }

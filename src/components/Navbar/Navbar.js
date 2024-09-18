@@ -1,7 +1,7 @@
 import './Navbar.css';
 import logo from './mythical_gourmet_nb.png';
 import { Link } from 'react-router-dom';
-import { FaSearch, FaShoppingCart, FaUser, FaHeart, FaTag } from 'react-icons/fa';
+import { FaSearch, FaShoppingCart, FaUser} from 'react-icons/fa';
 
 function Navbar() {
   return (
@@ -16,9 +16,7 @@ function Navbar() {
       {/* Barra de búsqueda */}
       <div className="navbar-search">
         <input type="text" placeholder="Buscar alimentos gourmet..." />
-        <button type="submit">
-          <FaSearch />
-        </button>
+        
       </div>
 
       {/* Pestañas de la derecha */}

@@ -20,7 +20,7 @@
     display: flex;
     align-items: center;
     flex-grow: 1;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 20px;
   }
   
@@ -28,7 +28,7 @@
     flex-grow: 1;
     padding: 8px 12px;
     border: 2px solid #e6e6d3; /* Bordes crema */
-    border-radius: 20px 0 0 20px;
+    border-radius: 20px 20px 20px 20px;
     font-size: 16px;
     outline: none;
   }

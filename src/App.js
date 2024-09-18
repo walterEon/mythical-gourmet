@@ -1,6 +1,7 @@
-import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 import Home from './pages/Home/Home.js';
 import Navbar from './components/Navbar/Navbar.js';
+import AccessibilityButton from './components/AccessibilityButton/AccessibilityButton.js';
 import './App.css';
 
 function App() {
@@ -12,6 +13,9 @@ function App() {
           <Route path='/' element={<Home />} />
         </Routes>
       </div>
+
+      {/* Botón de accesibilidad */}
+      <AccessibilityButton />
     </>
   );
 }
